@@ -57,8 +57,8 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
             sendMessage(f"Hey I'm Alive 🙂\nSince: <code>{uptime}</code>", context.bot, update)
         else :
             sendMarkup(start_string, context.bot, update, reply_markup)
-    else :
-        sendMessage(f"Oops! not a Authorized user.", context.bot, update)
+    else:
+        sendMessage('Oops! not a Authorized user.', context.bot, update)
 
 
 def restart(update, context):
